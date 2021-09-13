@@ -266,9 +266,7 @@ header .icons #menu-bars{
 .productDetail{
     margin-top: 8rem;
 }
-.productDetail img{
-    width: auto;
-}
+
 .productDetail ul li{
     list-style: none;
 }

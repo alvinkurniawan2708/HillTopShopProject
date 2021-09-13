@@ -61,7 +61,7 @@ class BestProduct extends Component {
                     <SwiperSlide style={{width:300 , height: 530}}>
                         <Product
                         key={index}
-                        link={`products/${product._id}`}
+                        link={`products/${product.id}`}
                         product={product}
                         description={this.productDetails(product)}
                         rating={product.rating}

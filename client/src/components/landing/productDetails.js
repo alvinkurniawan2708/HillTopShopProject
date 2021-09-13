@@ -40,14 +40,6 @@ class productDetails extends Component {
                     <div className="col-lg-6 col-md-6 col-sm-6">
                         <h1 style={{margin:"0"}}>{product.name}</h1>
                         <p className="lead" style={{margin:"0"}}>Description:{product.description}</p>
-                        <p className="lead" style={{margin:"0"}}>Features:</p>
-                        <ul style={{marginLeft:"5%",marginTop:"0"}}>
-                            {
-                                product.features.map((feature,index)=>(
-                                    <li key={index}>{feature}</li>
-                                ))
-                            }
-                        </ul>
                         <Rate disabled allowHalf defaultValue={product.rating} />
                         <p className="lead" style={{margin:"0"}}>Quantity: {product.quantity}</p>
                         <h1>Rp.{product.price}</h1>
@@ -59,14 +51,6 @@ class productDetails extends Component {
                 <br />
                 <h1>Product Details</h1>
                 <p className="lead"><b>{product.details}</b></p>
-                <p className="lead" style={{margin:"0"}}>Main Features:</p>
-                        <ul style={{marginLeft:"5%",marginTop:"0"}}>
-                            {
-                                product.features.map((feature,index)=>(
-                                    <li key={index}>{feature}</li>
-                                ))
-                            }
-                        </ul>
                 </Fragment>
                 )
                 : 
